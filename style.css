@@ -1,11 +1,11 @@
 @font-face {
     font-family: Roboto;
-    src: url("assets1/fonts/Roboto-Light.ttf");
+    src: url("D:/myCV/assets1/fonts/Roboto-Light.ttf");
     font-weight: 100;
 }
 @font-face {
     font-family: Roboto;
-    src: url("assets1/fonts/Roboto-Thin.ttf");
+    src: url("D:/myCV/assets1/fonts/Roboto-Thin.ttf");
     font-weight: 300;
 }
 * {
@@ -41,7 +41,7 @@ body {
   align-items: center;
 }
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 .nav-list {
   list-style: none;
@@ -65,7 +65,7 @@ a {
   position: relative;
 }
 
-a::after { 
+a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -76,9 +76,9 @@ a::after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 
-a:hover::after { 
-  width: 100%; 
-  left: 0; 
+a:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 .section {
@@ -92,10 +92,16 @@ a:hover::after {
     width: 100%
   }
 }
+@media (max-width: 320px) {
+  .section  {
+    width: 100%
+  }
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto' sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 1.5;
   color: #4d2323;
 }
@@ -108,7 +114,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 5px;
 }
-h1::after { 
+h1::after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -119,7 +125,7 @@ h1::after {
   background:#829985;
 }
 h2 {
-  margin-left: -45px;
+  margin-left: -30px;
   letter-spacing: 3px;
   color: #829985;
 }
@@ -132,7 +138,7 @@ hr {
 	border-top: 20px solid #D7D1C9;
 }
 .section-title {
-  margin-bottom: 20px;  
+  margin-bottom: 20px;
   margin-left: 20px;
   font-size: 20px;
   font-weight: 400;
@@ -149,6 +155,7 @@ hr {
 }
 
 .section-item a {
+  margin-right: 15px;
   text-decoration: none;
   color: #829985;
   transition: color 0.5s;
@@ -160,11 +167,15 @@ hr {
 
 .contacts-item a {
   letter-spacing: 0px;
-  font-family: 'Roboto';
-  font-weight: 500;
+  font-family: 'Roboto' sans-serif;
+  font-weight: 300;
 }
 .section-item a {
   line-height: 1px;
+  font-family: 'Roboto' sans-serif;
+  font-size: 18px;
+  line-height: 0;
+  font-weight: 300;
 }
 .section-education,
 .section-english {
@@ -180,7 +191,7 @@ hr {
   height:80px;
   width: 100%;
   background-color: #829985;
-  padding: 20px;  
+  padding: 20px;
 }
 
 .footer-container {
