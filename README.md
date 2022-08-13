@@ -1,1 +1,1 @@
-https://github.com/korolchuknika/myCV/
+https://github.com/korolchuknika/myCV
